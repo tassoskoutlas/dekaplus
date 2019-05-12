@@ -9,6 +9,6 @@ $('#tasks').on('hide.bs.collapse', function () {
 function share() {
   FB.ui({
     method: 'share',
-    href: 'https://dekaplus.info'
+    href: 'https://www.dekaplus.info'
   }, function(response){});
 }
