@@ -16,11 +16,26 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+
     <!-- Custom styles for this template -->
     <link href="css/custom.css" rel="stylesheet">
   </head>
 
   <body>
+    <!-- FB integration -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId            : '420537405411710',
+          autoLogAppEvents : true,
+          xfbml            : true,
+          version          : 'v3.3'
+        });
+      };
+    </script>
+    <script async defer src="https://connect.facebook.net/el_GR/sdk.js"></script>
 
     <header>
       <div class="collapse bg-dark" id="navbarHeader">
@@ -85,6 +100,8 @@
                   </div>
                 </div>
                 <div class="card-footer">
+                  <!--<a href="#" onclick="tweet()"><i class="fab fa-twitter fa-lg float-right"></i></a>-->
+                  <a href="#" onclick="share()"><i class="fab fa-facebook fa-lg float-right"></i></a>
                   <small class="text-muted">Προστέθηκε στις 11 Μαΐου 2019</small>
                 </div>
               </div>

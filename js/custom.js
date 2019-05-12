@@ -5,3 +5,10 @@ $('#tasks').on('show.bs.collapse', function () {
 $('#tasks').on('hide.bs.collapse', function () {
     $('.card-body a').addClass('mt-auto');
 })
+
+function share() {
+  FB.ui({
+    method: 'share',
+    href: 'https://tassoskoutlas.github.io'
+  }, function(response){});
+}
