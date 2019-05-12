@@ -9,6 +9,6 @@ $('#tasks').on('hide.bs.collapse', function () {
 function share() {
   FB.ui({
     method: 'share',
-    href: 'https://tassoskoutlas.github.io'
+    href: 'https://dekaplus.info'
   }, function(response){});
 }
